@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+
+  background: #e5e5e5;
+  display: flex;
+}
+
+body::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  background: #324179;
+  height: 46.3%;
+  width: 100%;
+}
+
+.page {
+  margin: auto;
+  min-width: 40%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 140px auto 0 0;
+  color: #fff;
+}
+
+header h1,
+legend,
+h2,
+footer {
+  font-family: "Staatliches", sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+legend,
+h2 {
+  color: #535971;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.input-wrapper label {
+  margin-bottom: 8px;
+}
+
+header p {
+  width: 60%;
+  font-size: 20px;
+}
+
+form {
+  background: #fff;
+  margin-top: 58px;
+  border-radius: 8px 8px 0 0;
+
+  padding: 64px 64px 10px 64px;
+}
+
+.field-wrapper fieldset legend,
+.radio-wrapper {
+  width: 100%;
+}
+
+.field-wrapper fieldset legend {
+  border-bottom: 1px solid #e6e6f0;
+
+  padding: 0 0 16px;
+  margin: 0 0 32px;
+
+  font-size: 24px;
+  font-weight: 34;
+}
+
+.field-wrapper fieldset {
+  margin-bottom: 30px;
+}
+
+fieldset {
+  border: none;
+  /* margin: 30px 0 40px 0; */
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.input-wrapper input,
+.category-wrapper,
+.textarea-wrapper {
+  height: 50px;
+  margin-bottom: 16px;
+  padding: 12px;
+
+  font-weight: 400;
+
+  background: #fafafc;
+  border: 1px solid #e6e6f0;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-wrapper input:invalid {
+  border: 1px solid red;
+}
+
+.input-wrapper span {
+  color: #c1bccc;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.input-wrapper span:hover {
+  color: #8c8992;
+}
+
+.col-2 {
+  display: flex;
+  gap: 22px;
+}
+
+.title-mentor {
+  margin-bottom: 8px;
+}
+
+.col-3 {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.col-3 > div:nth-child(1) {
+  width: 200%;
+}
+
+.radio-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.radio-wrapper label {
+  justify-content: center;
+}
+
+.textarea-wrapper {
+  height: 130px;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 160px;
+  background: #324179;
+
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 200px;
+}
+
+footer .button {
+  display: block;
+
+  width: 75%;
+  padding: 15px 15px;
+  margin: auto;
+
+  font-size: 20px;
+
+  background: #ff5374;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+}
+
+footer .button:hover {
+  background: #e61e46;
+}
